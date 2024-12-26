@@ -11,4 +11,10 @@ public class JobController {
         System.out.println("In home()");
         return "home";
     }
+
+    @RequestMapping("/addjob")
+    public String addJob(){
+        System.out.println("In addJob()");
+        return "addjob";
+    }
 }
