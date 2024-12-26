@@ -1,4 +1,4 @@
-package com.uttam.JopApp;
+package com.uttam.JobApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -19,7 +19,7 @@
         <label for="salary">Salary:</label>
         <input type="number" id="salary" name="salary"><br><br>
 
-        <input type="submit" value="Add Job">
+            <input type="submit" value="Add Job">
     </form>
 </body>
 </html>
