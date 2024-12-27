@@ -6,6 +6,13 @@ public class JobPost {
     private String location;
     private int salary;
 
+    public JobPost(String jobTitle, String company, String location, int salary) {
+        this.jobTitle = jobTitle;
+        this.company = company;
+        this.location = location;
+        this.salary = salary;
+    }
+
     public String getJobTitle() {
         return jobTitle;
     }

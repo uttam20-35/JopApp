@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,23 +17,17 @@
             </tr>
         </thead>
         <tbody>
-            <%-- Example Data (Replace with dynamic data from the backend) --%>
-            <tr>
-                <td>Software Engineer</td>
-                <td>TechCorp</td>
-                <td>New York</td>
-                <td>$100,000</td>
-            </tr>
-            <tr>
-                <td>Web Developer</td>
-                <td>WebWorks</td>
-                <td>San Francisco</td>
-                <td>$80,000</td>
-            </tr>
-            <%-- Use a loop to dynamically generate rows here --%>
+            <c:forEach var="job" items="${jobs}">
+                <tr>
+                    <td>${job.jobTitle}</td>
+                    <td>${job.company}</td>
+                    <td>${job.location}</td>
+                    <td>${job.salary}</td>
+                </tr>
+            </c:forEach>
         </tbody>
     </table>
     <br>
-    <a href="home.jsp">Back to Home</a>
+    <a href="/home">Back to Home</a>
 </body>
 </html>
